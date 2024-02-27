@@ -1,0 +1,27 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <iomaip>
+using namespace std;
+int main()
+{
+int num1;
+int num2;
+int answer;
+int correctAnswer;
+
+srand(time(NULL));
+num1 = rand() % 10 + 1;
+num2 = rand() % 10 + 1;
+correctAnswer = num1 + num2;
+cout << num1 << endl << endl;
+cout << " + " << num2 << endl;
+cout << "___" << endl;
+cin >> answer;
+
+if (answer == correctAnswer)
+cout << "Congratulations, that is correct!" << endl;
+else
+cout << "Sorry, the correct answer is: " << correctAnswer << endl;
+return 0;
+}
